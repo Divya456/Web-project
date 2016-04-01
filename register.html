@@ -1,0 +1,64 @@
+<html>
+<head></head>
+<title>Sign up</title>
+<style>
+fieldset
+{
+ text-align:center;
+ font-size:20;
+ font-family:consolas;
+
+}
+legend
+{
+font-size:30;
+text-align:center;
+}
+body
+{
+ background-color:lavender;
+}
+</style>
+<body>
+<form action="action_page.php" method="POST" autocomplete="ON" autofocus>
+
+<fieldset>
+<legend style=font-family:"Constantania"><b>Personal information</b></legend>
+Firstname
+<input type="text" name="Firstname" required placeholder="Firstname" required><br><br>
+Lastname
+<input type="text" name="Lastname" required placeholder="Lastname" required><br><br>
+Birthday
+<input type="date" name="bday" required><br><br>
+Age
+<input type="number" name="age" min="1" max="100"><br><br>
+Email id
+<input type="email" name="email" required placeholder="Enter valid email id" required><br><br>
+Password
+<input type="password" name="pwd" size="15" maxlength="20"><br><br>
+Confirm password
+<input type="password" name="pwd" size="15" maxlength="20"><br><br>
+Sex<br>
+<input type="radio" name="sex" value="Male" checked>Male<br>
+<input type="radio" name="sex" value="Female">Female<br><br>
+Mobile no.
+<input type="tel" name="phone" required placeholder="Enter valid mobile no." pattern="[1-9]{10}" title="Mobile no. is 10 digits!"><br><br>
+Security question
+<select name="security">
+<option value="school">What was name of your first school?</option>
+<option value="teacher">What was name of your favourite teacher?</option>
+<option value="friend">What is the name of your best friend?</option>
+</select>
+<br><br>
+Security answer
+<input type="text" name="ans">
+<br><br>
+Upload files
+<input type="file" name="img" value="choose files" multiple><br><br>
+<p><input type="checkbox" name="check" checked>I have agreed to terms and conditions</p>
+<input type="submit" value="Sign up" style="background-color:lightblue;width:250px;height:50px" formtarget="_blank">
+
+</body>
+
+</head>
+</html>
